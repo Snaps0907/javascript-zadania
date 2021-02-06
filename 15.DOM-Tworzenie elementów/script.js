@@ -79,7 +79,6 @@ newDiv2.append(newDiv3);
 document.body.appendChild(newDiv2);
 document.body.appendChild(newSpan2);
 
-
 ///Zadanie 7
 const List = [
   "pierwszy",
@@ -245,7 +244,6 @@ function createButtonDelate(){
     return button;
 }
 
-
 function createField(fieldName, text){
     const buttonDelate = createButtonDelate();
     const wrapper = document.createElement("div");
@@ -257,9 +255,7 @@ function createField(fieldName, text){
     wrapper.appendChild(fieldDiv);
     wrapper.appendChild(fieldValue);
     wrapper.appendChild(buttonDelate);
-
-    
-
+  
     return wrapper;
 }
 
@@ -278,14 +274,12 @@ buttonCreate.addEventListener("click", () => {
         wrapper.appendChild(element);
     }
 
-
     for (let index = 0; index < lastname.length; index++) {
         const fieldName = lastname[index].value;
 
         const element = createField("nazwisko", fieldName);
         wrapper.appendChild(element);
     }
-
 
     for (let index = 0; index < age.length; index++) {
         const fieldName = age[index].value;
